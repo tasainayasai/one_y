@@ -56,18 +56,17 @@ body {
       margin: 0 auto;
     }
 
-    .sticker {
-      position: relative;
-      width: 160px;
-      animation: fadein 1s ease;
-    }
+.sticker-album {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 360px;
+  margin: 0 auto;
+}
 
-    .sticker img {
-      width: 100%;
-      border-radius: 10px;
-      border: 3px solid #fff;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    }
+.sticker {
+  width: 100%; /* Gridの幅いっぱい */
+}
 
     .masking {
       position: absolute;
